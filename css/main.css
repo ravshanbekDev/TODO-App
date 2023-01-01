@@ -1,0 +1,141 @@
+/* Switch  style*/
+body {
+  --primary-color: #100e17;
+  --primary-bg-color: #fff;
+  --border-color: #ccc;
+  /* End colors */
+  position: relative;
+}
+
+body.dark-mode {
+  --primary-color: #ff8a00;
+  --primary-bg-color: #100e17;
+  --border-color: #fff;
+}
+
+body.dark-mode .switch-sun {
+  display: block;
+}
+
+body.dark-mode .switch-moon {
+  display: none;
+}
+
+.wrapper {
+  height: 100vh;
+  padding: 0 15px;
+  /* This part is important for centering */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* End center */
+  color: var(--primary-color);
+  background-color: var(--primary-bg-color);
+}
+
+.content {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+
+.switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.switch-sun, .switch-moon {
+  font-size: 3rem;
+  color: #f6ad55;
+  cursor: pointer;
+}
+
+.switch-sun {
+  display: none;
+}
+
+
+
+/* Todo style */
+
+#main-heading {
+  text-align: center;
+}
+
+#todo-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#todo-form input {    
+  font-size: 24px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+#todo-form input:hover{
+  cursor: pointer;
+  background: chocolate;
+  color: #fff;
+}
+
+#todo-list {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.todo-card {
+  box-shadow: 0 0 4px #ccc;
+  padding: 24px;
+  margin: 16px;
+  border-radius: 6px;
+}
+
+.todo-view-wrapper, .todo-edit-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-edit-wrapper {
+  display: none;
+}
+
+.todo-card i {
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 16px;
+}
+
+.todo-message {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Switch */
+
+.switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.switch-sun, .switch-moon {
+  font-size: 3rem;
+  color: #f6ad55;
+  cursor: pointer;
+}
+
+.switch-sun {
+  display: none;
+}
+
